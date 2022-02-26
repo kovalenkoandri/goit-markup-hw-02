@@ -15,11 +15,9 @@
   --primary-text-color: #212121;
   --secondary-text-color: #757575;
   --accent-color: #2196f3;
-  --primary-bg-color: #e5e5e5;
 }
 
 body {
-  background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
   letter-spacing: 0.03em;
   font-family: 'Roboto', sans-serif;
@@ -52,9 +50,6 @@ body {
 }
 
 /* ----------------header---------------- */
-header {
-  background-color: #ececec;
-}
 
 .logo-header-color {
   color: #000;
@@ -68,7 +63,8 @@ header {
 }
 
 .link:hover,
-.link:focus {
+.link:focus,
+.link:active {
   color: var(--accent-color);
 }
 
@@ -76,6 +72,7 @@ header {
 
 .bg-order-service {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .index-h1 {
@@ -95,10 +92,8 @@ header {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
+  font-family: inherit;
 }
 
 .index-h3-our-features {
@@ -170,7 +165,6 @@ header {
 
 .footer-address {
   font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: #fff;
